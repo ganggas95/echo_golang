@@ -1,0 +1,32 @@
+{{template "header" .}}
+<div class="container-fluid">
+    <div class="panel panel-default panel-login">
+        <form name="auth" action="/admin/auth" method="POST">
+            <div class="panel-heading">
+                <div class="panel-title" align="center">
+                    <h3>Login</h3>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input class="form-control" type="text" name="username" placeholder="Username/Email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" type="password" name="password" placeholder="Password Account">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button type="submit" class="btn btn-primary" name="btn-login">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{{template "footer" .}}

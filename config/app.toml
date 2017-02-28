@@ -1,0 +1,10 @@
+# A sample TOML config file.
+[database]
+host = "localhost"  
+user = "postgres"
+pass = "K3yf4t0n"
+name = "echo_db"
+driver = "postgres"
+
+[jwt_config]
+secret = "bismillahirrohmanirrohim"
